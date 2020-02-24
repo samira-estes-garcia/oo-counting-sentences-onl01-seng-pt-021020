@@ -18,7 +18,7 @@ class String
     if self.sentence? || self.question? || self.exclamation?
       self.split
     end
-    self.split.delete_if{|sentence| sentence.size < 2}.size
+    self.split.delete_if{|s| s.size < 2}.size
   end
   
 end
