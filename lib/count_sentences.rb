@@ -18,7 +18,6 @@ class String
     if self.sentence? || self.question || self.exclamation
       self.split.count
     end
-    self
   end
   
 end
