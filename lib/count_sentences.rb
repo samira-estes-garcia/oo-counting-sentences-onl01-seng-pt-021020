@@ -17,7 +17,7 @@ class String
   def count_sentences
     if self.sentence? || self.question? || self.exclamation?
     end
-    self.split.delete_if{|s| s.size < 2}.size
+    self.split.delete_if{|w| w.size < 2}.size
   end
   
 end
